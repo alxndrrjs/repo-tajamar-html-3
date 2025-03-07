@@ -57,6 +57,19 @@
             border-radius: 5px;
         }
 
+        input[type="radio"] {
+            width: 97%;
+            padding: 20px;
+            margin-bottom: 15px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .gender {
+            display: inline-flex;
+            margin-right: 20px;
+        }
+
         .boton {
             background-color: #4da06d;
             color: white;
@@ -107,10 +120,14 @@
             <input type="date" id="date" name="date" required>
             <br>
             <label for="genero">Género:</label>
-            <input type="radio" id="masculino" name="genero" value="masculino" required>
-            <label for="masculino">Masculino</label>
-            <input type="radio" id="femenino" name="genero" value="femenino" required>
-            <label for="femenino">Femenino</label>
+            <div class="gender">
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+            </div>
+            <div class="gender">
+                <input type="radio" id="femenino" name="genero" value="femenino" required>
+                <label for="femenino">Femenino</label>
+            </div>
             <br>
         </fieldset>
 
