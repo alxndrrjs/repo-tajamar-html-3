@@ -1,0 +1,101 @@
+<!-- 1.1. Estructura básica de del documento -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3 HTML- Ejercicio 1</title>
+
+    <!-- Estilos CSS -->
+    <style>
+        html,body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            margin: 0;
+            flex-direction: column;
+        }
+        .cabecera {
+            background-color: #4da06d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .lista-alf {
+            list-style-type: lower-alpha;
+        }
+
+        .boton {
+            background-color: #4da06d;
+            color: white;
+            font-size: larger;
+            width: 200px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container {
+            flex: 1;
+            margin: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .enlace {
+            color: #4da06d;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            overflow: hidden;
+        }   
+
+    </style>
+</head>
+<body>
+
+    <!-- 1.2. Encabezado de la página -->
+    <header class="cabecera">
+        <h1>Bienvenidos a Mi Página Web</h1>
+        <p>Esta es una página de ejemplo para el ejercicio</p>
+    </header>
+
+    <!-- 1.3. Secciones principales -->
+    <div class="container">
+        <main>
+            <h2>Acerca de nosotros</h2>
+
+            <p>Somos una empresa dedicada al desarrollo de software</p>
+        </main>
+        <section>
+            <h2>Nuestros servicios</h2>
+
+            <ol class="lista-alf">
+                <li>Desarrollo de software para uso comercial</li>
+                <li>Soluciones a problemas de software web</li>
+                <li>Servicio de hosting</li>
+            </ol>
+
+            <a href="https://www.wikipedia.org" target="_blank" class="enlace">Ver más servicio</a>
+        </section>
+    </div>
+
+    <!-- 1.4. Pie de página -->
+    <footer>
+        <a href="mailto:ale@laempresaaburrida.com" class="enlace">Enviar correo electrónico</a><br><br>
+        <a href="tel:+34645180113" class="enlace">Llamar por teléfono</a>
+
+        <p>© La empresa Aburrida</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
